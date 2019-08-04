@@ -1,0 +1,17 @@
+### k近邻算法解释
+```
+  简单在二维平面内使用，一个点中找到平面内跟他最接近的3个点代表的分类。得出它本身大概率分类
+  distances = [sqrt(np.sum((x_train - x) **2)) for x_train in X_train] // 计算所有点与x的距离
+   np.argsort(distances) // 得到最近的值的索引我
+```
+### 鸢尾花案例测试Knn是否有效
+```
+  %run ./module_selection.py
+  %run ./knn.py
+  from module_selection import train_test_split
+  from sklearn import datasets
+  iris = datasets.load_iris() 
+  y_predict = my_knn_clf.predict(X_test)
+  sum(y_predict==y_test)/len(y_test)
+
+```
