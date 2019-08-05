@@ -2,8 +2,13 @@
 ```
   简单在二维平面内使用，一个点中找到平面内跟他最接近的3个点代表的分类。得出它本身大概率分类
   distances = [sqrt(np.sum((x_train - x) **2)) for x_train in X_train] // 计算所有点与x的距离
-   np.argsort(distances) // 得到最近的值的索引我
+  np.argsort(distances) // 得到最近的值的索引我
+  
 ```
+- 超参数
+  - k为knn的超参数，需要在算法运行前获取，跟不同环境类型有关  
+  - weights也为Knn超参数，可以理解为knn可以获取到最近的几个点，但其中每个点的距离应该考虑其中，1/distance为其中每票的权重，权重不一定要导入，根据情况考虑
+  - 明可夫斯基距离相应的p ,2为欧拉，1为曼哈顿，不同维度上使用结果有不同效果
 ### 鸢尾花案例测试Knn是否有效
 ```
   %run ./module_selection.py
