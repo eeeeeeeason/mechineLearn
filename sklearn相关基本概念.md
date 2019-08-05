@@ -14,4 +14,4 @@ accuracy_score(y_test, y_predict)
 knn_clf.score(X_test, y_test)
 ```
 
-- 超参数，需要在算法运行前获取，跟不同环境类型有关，gridsearch可获取最佳超参数[超参数的使用案例](https://github.com/eeeeeeeason/mechineLearn/blob/master/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2-%E8%B6%85%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96gridsearch)
+- 超参数，需要在算法运行前获取，跟不同环境类型有关，gridsearch可获取最佳超参数[超参数的网格交叉校验计算优化及使用案例](https://github.com/eeeeeeeason/mechineLearn/blob/master/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2-%E8%B6%85%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96gridsearch)
