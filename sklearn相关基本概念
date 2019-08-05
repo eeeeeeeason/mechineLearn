@@ -15,11 +15,3 @@ knn_clf.score(X_test, y_test)
 ```
 
 - 超参数，需要在算法运行前获取，跟不同环境类型有关，gridsearch可获取最佳超参数
-```
-param_grid = [
-  {
-    'weights': ['uniform'],
-    'n_neighbors': [i for i in range(1,11)]
-  }
-]
-```
